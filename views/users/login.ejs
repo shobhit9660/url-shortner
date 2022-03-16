@@ -1,0 +1,47 @@
+<% layout('layouts/boilerplate')%>
+
+<!-- <h1>This is Login Page</h1> -->
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+      <div class="card shadow">
+        <img
+          src="https://media.istockphoto.com/photos/modern-keyboard-wih-blue-log-in-button-picture-id638149354?b=1&k=20&m=638149354&s=170667a&w=0&h=K_dd1EuWBMmyU0A5IN4igEUROFozhvtj7CtJ0GswHLE="
+          alt=""
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Login</h5>
+          <form action="/login" method="POST" class="validated-form" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                type="text"
+                id="email"
+                name="email"
+                autofocus
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="password">Password</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <button class="btn btn-success btn-block">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
